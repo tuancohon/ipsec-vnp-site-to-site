@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="lap7" version="1" scripttimeout="300" lock="0">
+  <topology>
+    <nodes>
+      <node id="1" name="SAIGON" type="iol" template="iol" image="i86bi_linux-adventerprisek9-ms.155-2.T.bin" ethernet="1" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Router.png" config="0" left="300" top="153">
+        <interface id="0" name="e0/0" type="ethernet" network_id="1"/>
+      </node>
+      <node id="2" name="ISP" type="iol" template="iol" image="i86bi_linux-adventerprisek9-ms.155-2.T.bin" ethernet="1" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Router.png" config="0" left="552" top="150">
+        <interface id="0" name="e0/0" type="ethernet" network_id="1"/>
+        <interface id="16" name="e0/1" type="ethernet" network_id="2"/>
+      </node>
+      <node id="3" name="VUNGTAU" type="iol" template="iol" image="i86bi_linux-adventerprisek9-ms.155-2.T.bin" ethernet="1" nvram="1024" ram="1024" serial="0" console="" delay="0" icon="Router.png" config="0" left="789" top="156">
+        <interface id="0" name="e0/0" type="ethernet" network_id="2"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-R1iface_0" left="366" top="250" visibility="0"/>
+      <network id="2" type="bridge" name="Net-R2iface_16" left="576" top="244" visibility="0"/>
+    </networks>
+  </topology>
+</lab>
